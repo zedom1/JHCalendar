@@ -38,6 +38,12 @@ public struct CalendarComponents : Hashable,Strideable{
         let current = self
         return Int(other.date.timeIntervalSince(current.date))
     }
+    
+    public init(year: Int, month: Int, day: Int) {
+        self.year = year
+        self.month = month
+        self.day = day
+    }
 }
 
 extension CalendarComponents {
